@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./form.css">
     <title>FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    
-     <form action="">
-        <h2 class="owen">SIGN UP FORM</h2>
+     <form action="" id="form-box" method="get">
+        <h2 class="owen"> <i class="fa fa-user-plus" aria-hidden="true" ></i>
+            SIGN UP FORM
+                    </h2>
         <label for=""
         class="owen">First Name </label>
             <input type="text" name="" id="">
@@ -19,17 +22,39 @@
             <label for="" class="owen">Enter Your Email</label>
            <input type="email" name="" id="" 
            required>
-           <label for="" class="owen">Password</label>
+
+           <label for="gender">GENDER</label>
+           <input type="radio" name="gender" class="input-radio" value="male" >MALE
+         <input type="radio" name="gender" class="input-radio" value="female"> FEMALE
+            <input type="radio" name="gender" class="input-radio" value="others">OTHERS
+
+            <fieldset>
+              <legend>select your couses</legend>
+              <input type="checkbox" name="courses"  class="input-radio" value="frontend" >FRONTEND
+              <input type="checkbox" name="courses"  class="input-radio" value="backend">BACKEND
+              <input type="checkbox" name="courses"  class="input-radio" value="data analytic">DATA ANALYTICS
+              <input type="checkbox" name="courses"  class="input-radio" value="ui/ux">UI/UX
+            </fieldset>
+            <select name="Schools" id="">
+              <option value="">Choose your school</option>
+              <option value="RSUST">RSUST</option>
+              <option value="UNIPORT">UNIPORT</option>
+              <option value="ABSU">ABSU</option>
+              <option value="ABSU">UNN</option>
+            </select>
+
+           <label for="" style="margin-top: 20px;" class="owen">Password</label>
            <input type="password" name="" id="" 
            required placeholder="Enter Your Password">
            <br>
            <input type="button" value="REGISTER" class="reg">
            <button>
             SIGN UP
-            <!-- <img src="../img-2.png" alt=""
+             <!-- <img src="../img-2.png" alt=""
              width="10px"
-             height="10px">
-           </button> -->
+             height="10px"> -->
+             <i class="fa fa-paper-plane" aria-hidden="true"></i>
+           </button> 
         
      </form>
 </body>
